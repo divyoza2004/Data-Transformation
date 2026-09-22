@@ -1,7 +1,13 @@
-# Data Transformer Project
+# Project: Data Transformer
 
 ## Objective 
 "Data Transformer" is a comprehensive SQL project designed to enhance your practical knowledge of advanced SQL operations. This project will guide students through working with Joins, Subqueries, Date and String Manipulation Functions, Window Functions, and the SQL CASE Expression. By completing this project, students will build the skills needed to transform and manipulate data for reporting, analysis, and complex queries.
+
+## ▶ Demo Video
+
+<a href="https://drive.google.com/file/d/1AatthUMYyYT7dHo0rPrh9x-oAviJh_4N/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/▶-Watch%20Demo%20Video-181717?style=for-the-badge&logo=github&logoColor=white" alt="Watch Demo Video" />
+</a>
 
 ## Source Tables
 
@@ -217,7 +223,7 @@ SELECT OrderID, TO_CHAR(OrderDate, 'DD-Mon-YYYY') AS FormattedOrderDate
 FROM Orders;
 ```
 
-> ℹ️ **Note:** DuckDB has no `TO_CHAR` function, so the equivalent `strftime()` was used to execute this query and produce the output below. The original `TO_CHAR` syntax (valid in PostgreSQL/Oracle) is shown above and works unchanged there.
+> **Note:** DuckDB has no `TO_CHAR` function, so the equivalent `strftime()` was used to execute this query and produce the output below. The original `TO_CHAR` syntax (valid in PostgreSQL/Oracle) is shown above and works unchanged there.
 
 **Output** _( 2 rows )_:
 
@@ -410,7 +416,7 @@ FROM Employees;
 ---
 
 
-## 📚 Quick-Reference Summary
+## Quick-Reference Summary
 
 | # | Category | Query | What it demonstrates |
 |---|---|---|---|
