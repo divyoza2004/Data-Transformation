@@ -26,18 +26,6 @@
 | 1 | Mark | Johnson | Sales | 2020-01-15 | 50000.00 |
 | 2 | Susan | Lee | HR | 2021-03-20 | 55000.00 |
 
-## 🛠️ How the outputs were generated
-
-The tables you see below aren't manually written — they come from a small Python script (`generate_outputs.py`, included alongside this README) that:
-
-1. Spins up an in-memory **DuckDB** database (a SQL engine that speaks standard SQL, including window functions and `EXTRACT`).
-2. Recreates the `Customers`, `Orders`, and `Employees` tables and loads the sample rows shown above.
-3. Runs each query from `data_transformation.sql` in turn using `duckdb` + `pandas`.
-4. Converts each result set to a Markdown table with `DataFrame.to_markdown()`.
-5. Assembles everything into this document.
-
----
-
 ## Query-by-Query Breakdown
 
 
@@ -444,9 +432,6 @@ FROM Employees;
 | 16 | Conditional | CASE | Discount tiering |
 | 17 | Conditional | CASE | Salary banding |
 
-## ✅ Takeaways
-
-- **Joins (1–4)** show the four classic ways to combine `Customers` and `Orders`, moving from strict matches (`INNER`) to preserving one or both sides (`LEFT`/`RIGHT`/`UNION`-emulated `FULL`).
 - **Subqueries (5–6)** show how a scalar subquery (`SELECT AVG(...)`) can be used inline as a comparison threshold.
 - **Date functions (7–9)** cover extracting parts of a date, doing date arithmetic, and formatting dates for display.
 - **String functions (10–13)** cover the everyday cleanup/formatting toolkit: concatenation, substitution, case conversion, and trimming.
