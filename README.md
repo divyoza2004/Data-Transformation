@@ -1,4 +1,4 @@
-# Data Transformation Project
+# Data Transformer Project
 
 ## Objective 
 "Data Transformer" is a comprehensive SQL project designed to enhance your practical knowledge of advanced SQL operations. This project will guide students through working with Joins, Subqueries, Date and String Manipulation Functions, Window Functions, and the SQL CASE Expression. By completing this project, students will build the skills needed to transform and manipulate data for reporting, analysis, and complex queries.
